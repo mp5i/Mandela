@@ -1,0 +1,11 @@
+local Functions = loadstring(game:HttpGet("https://github.com/mp5i/Mandela/blob/main/functions.lua"))
+
+local IsInputEqual = function(Input, Key)
+    return Input.KeyCode == Enum.KeyCode.[Key]
+end
+
+Globals.GetUserInputService():Connect(function(Input, _gameProcessed)
+    if not _gameProcessed then
+        if IsInputEqual(Input, Key)
+              
+end)
