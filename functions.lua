@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://github.com/mp5i/Mandela/blob/main/globals.lua"))
+local Globals = loadstring(game:HttpGet("https://github.com/mp5i/Mandela/blob/main/globals.lua"))
 
 local GetText = function(Text, Args)
   if (Args ~= "None") then
@@ -16,6 +16,6 @@ local GetMemberWhichIsA = function(Class, Member)
 end
 
 local SendGuiNotification = function(About, Message, Args, Delta)
-  return GetStarterGui():SetCore("SendNotifcation", {Title = About, Text = GetText(Message, Args), Duration = Delta})
+  return Globals.GetStarterGui():SetCore("SendNotifcation", {Title = About, Text = GetText(Message, Args), Duration = Delta})
 end
 
